@@ -4,16 +4,8 @@ package task2;
 нет хоть одной 4 или 1, то метод вернет false;
 Написать набор тестов для этого метода (варианта 3-4 входных данных)
  */
-public class Main {
-    public static void main(String[] args) {
-        int[] arrTrue = {1, 4, 1, 1};
-        int[] arrFalse = {1, 4, 2, 1};
-
-        System.out.println(checkArrFor1or4(arrTrue));
-        System.out.println(checkArrFor1or4(arrFalse));
-    }
-
-    public static boolean checkArrFor1or4 (int[] arr) {
+public class ArrChecker {
+    public boolean checkArrFor1or4 (int[] arr) {
         boolean arrChecker = true;
 
         for (int i = 0; i < arr.length; i++) {
