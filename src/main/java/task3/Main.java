@@ -15,16 +15,14 @@ public class Main {
     private static Connection connection;
 
     public static void main(String[] args) {
-        //sozdatj bazu i td
-        connect();
-        disconnect();
+
     }
 
 
     public static void connect() {
         try {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:DBForProducts.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:Students.db");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
